@@ -32,22 +32,21 @@ def awesome_pretty_print_colors(obj, indent=0):
         print(' ' * indent + '{')
         for key, value in obj.items():
             print(' ' * (indent + 4) + Fore.CYAN + repr(key) + Style.RESET_ALL + ' => ', end='')
-            awesome_pretty_print(value, indent + 4)
+            awesome_pretty_print_colors(value, indent + 4)  # Corrected function call
         print(' ' * indent + '}')
     elif isinstance(obj, list):
         print(' ' * indent + '[')
         for index, value in enumerate(obj):
             print(' ' * (indent + 4) + Fore.YELLOW + f'[{index}]' + Style.RESET_ALL + ' => ', end='')
-            awesome_pretty_print(value, indent + 4)
+            awesome_pretty_print_colors(value, indent + 4)  # Corrected function call
         print(' ' * indent + ']')
     else:
         print(Fore.GREEN + repr(obj) + Style.RESET_ALL)
 
 def appc(obj):
-    awesome_pretty_print(obj)
+    awesome_pretty_print_colors(obj)  # Corrected function call
 
 # PHP style print_r with colors
-init(autoreset=True)
 
 def php_style_print_r(obj, indent=0):
     spacing = '    '
@@ -55,13 +54,13 @@ def php_style_print_r(obj, indent=0):
         print(' ' * indent + '(')
         for key, value in obj.items():
             print(' ' * (indent + 4) + Fore.CYAN + repr(key) + Style.RESET_ALL + ' => ', end='')
-            awesome_pretty_print(value, indent + 4)
+            php_style_print_r(value, indent + 4)  # Corrected function call
         print(' ' * indent + ')')
     elif isinstance(obj, list):
         print(' ' * indent + '(')
         for index, value in enumerate(obj):
             print(' ' * (indent + 4) + Fore.YELLOW + f'[{index}]' + Style.RESET_ALL + ' => ', end='')
-            awesome_pretty_print(value, indent + 4)
+            php_style_print_r(value, indent + 4)  # Corrected function call
         print(' ' * indent + ')')
     else:
         print(Fore.GREEN + repr(obj) + Style.RESET_ALL)

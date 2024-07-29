@@ -9,6 +9,11 @@ I am now sharing it with the world in case anyone else hates pprint and similar 
 
 I chose an MIT license in honor of the Ruby gem awesome_print, since that example was what helped ChatGPT to understand my wishes.
 
+You will need colorama for this. 
+```
+pip install colorama
+```
+
 ___
 ### Example usage:
 

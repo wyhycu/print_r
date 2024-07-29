@@ -1,13 +1,13 @@
-# print_r - PHP's print_r() for python. Or pretty close. 
+## print_r - PHP's print_r() for python. Or pretty close. 
 
 ---
-This module does exactly as the title suggests, it dumps python data structures and presents them in ways that emulate PHP's print_r() function.  
+This module does exactly as the title suggests, it dumps Python data structures and presents them in ways that emulate PHP's print_r() function.
 
-This module was the result of serendipity. I cannot take credit as it is a ChaptGPT 4o hallucination. I am choosing to call it a hallucination as I did not prompt explicitly as it to write this module. I was simply asking it questions, but when I began k-shot prompting what I was looking for it pooped out a prototype. I fine-tuned its protype into a few more example, and chose my 3 favorite. 
+This module was the result of serendipity. I cannot take credit as it is a ChaptGPT 4o hallucination. I am choosing to call it a hallucination as I did not prompt explicitly as it to write this module. I was simply asking it questions, but when I began k-shot prompting what I was looking for it pooped out a prototype. I fine-tuned its prototype into a few more examples and chose my 3 favorites.
 
-I am now sharing it with the world in case anyone else hates pprint and similar modules as my as myself and needs something for pattern/shape oriented brains.
+I am now sharing it with the world in case anyone else hates pprint and similar modules as much as myself and needs something for pattern/shape-oriented brains.
 
-I chose an MIT license in honor of the Ruby gem awesome_print, since that example was what help ChatGPT to understand my wishes. 
+I chose an MIT license in honor of the Ruby gem awesome_print, since that example was what helped ChatGPT to understand my wishes.
 
 ___
 ### Example usage:

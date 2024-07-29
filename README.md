@@ -28,7 +28,7 @@ from print_r import ppr
 ppr(data_structure_to_dump)
 ```
 An example of ppr() output: 
-```php
+```ruby
 (
     'name' => 'John Doe'
     'age' => 30

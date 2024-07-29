@@ -27,3 +27,82 @@ And finally, for the full 'php_style_print_r' example:
 from print_r import ppr
 ppr(data_structure_to_dump)
 ```
+An example of ppr() output: 
+```php
+(
+    'name' => 'John Doe'
+    'age' => 30
+    'children' =>     (
+        [0] =>         (
+            'name' => 'Jane Doe'
+            'age' => 10
+            'hobbies' =>             (
+                [0] => 'drawing'
+                [1] => 'reading'
+            )
+        )
+        [1] =>         (
+            'name' => 'Jim Doe'
+            'age' => 7
+            'hobbies' =>             (
+                [0] => 'soccer'
+                [1] => 'video games'
+            )
+        )
+    )
+    'address' =>     (
+        'street' => '123 Main St'
+        'city' => 'Anytown'
+        'postal_code' => '12345'
+        'coordinates' =>         (
+            'latitude' => 40.7128
+            'longitude' => -74.006
+        )
+    )
+    'employment' =>     (
+        'current' =>         (
+            'position' => 'Software Engineer'
+            'company' => 'TechCorp'
+            'years' => 5
+            'projects' =>             (
+                [0] =>                 (
+                    'name' => 'Project A'
+                    'duration' => '2 years'
+                )
+                [1] =>                 (
+                    'name' => 'Project B'
+                    'duration' => '1 year'
+                )
+                [2] =>                 (
+                    'name' => 'Project C'
+                    'duration' => '2 years'
+                )
+            )
+        )
+        'previous' =>         (
+            [0] =>             (
+                'position' => 'Junior Developer'
+                'company' => 'DevInc'
+                'years' => 2
+            )
+            [1] =>             (
+                'position' => 'Intern'
+                'company' => 'StartUp'
+                'years' => 1
+            )
+        )
+    )
+    'favorites' =>     (
+        'colors' =>         (
+            [0] => 'blue'
+            [1] => 'green'
+            [2] => 'red'
+        )
+        'foods' =>         (
+            [0] => 'pizza'
+            [1] => 'ice cream'
+            [2] => 'salad'
+        )
+    )
+)
+```

@@ -6,9 +6,7 @@ setup(
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     description='A simple module to print iterable data with colors',
-    author='Your Name',
-    author_email='your.email@example.com',
-    url='https://github.com/yourusername/print_r',
+    url='https://github.com/wyhycu/print_r',
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',

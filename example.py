@@ -1,6 +1,7 @@
 from print_r import app
 from print_r import appc
 from print_r import ppr
+from print_r import pypr
 
 complex_data = {
     "name": "John Doe",
@@ -56,4 +57,7 @@ appc(complex_data)
 print("\n")
 print("php_style_print_r example:\n")
 ppr(complex_data)
+print("\n")
+print("python_style_print_r example:\n")
+pypr(complex_data)
 print("\n")
